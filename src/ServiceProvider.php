@@ -21,9 +21,11 @@ class ServiceProvider extends IlluminateServiceProvider
 
         $this->publishes([__DIR__. '/public' => public_path('vendor/seguce92')], 'adminmd-source');
 
-        $this->publishes([__DIR__ . '/resources/views/AdminMD' => resource_path('views/vendor/seguce92/AdminMD')], 'AdminMD');
+        $this->publishes([__DIR__ . '/resources/views/AdminMD' => resource_path('views/vendor/seguce92/AdminMD')], 'adminmd');
 
-        $this->publishes([__DIR__ . '/resources/views/index.blade.php' => resource_path('views/adminmd-example.blade.php')], 'view-home');
+        $this->publishes([__DIR__ . '/resources/views/index.blade.php' => resource_path('views/adminmd.blade.php')], 'view-home');
+
+        $this->loadViewsFrom(resource_path('views/vendor/seguce92/AdminMD'), 'AdminMD');
     }
 
     /**
