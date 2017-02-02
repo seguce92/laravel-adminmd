@@ -6,17 +6,17 @@ return [
     /**
      * APPLICATION NAME
      */
-    'app_name'  =>  'MediaPlayer',
+    'app_name'  =>  'Application',
 
     /**
      * SHORT NAME APPLICATION
      */
-    'app_title' =>  'MPA',
+    'app_title' =>  'APP',
 
     /**
      * APPLICATION DESCRIPTION
      */
-    'app_description'   =>  'Sistema de Administracion de Programacion y Broadcasting para TV,',
+    'app_description'   =>  'Here description of app',
 
     /**
      * APPLICATION KEYWORDS
