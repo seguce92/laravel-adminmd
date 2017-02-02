@@ -12,6 +12,12 @@ $ composer require seguce92/laravel-adminmd
 Register the service provider array in `app/config/app.php`.
 ```php
 Seguce92\AdminMD\ServiceProvider::class,
+Collective\Html\HtmlServiceProvider::class,
+```
+You register use the facade for shorter code. Add this to your facades in array `aliases`:
+```php
+'Form' => Collective\Html\FormFacade::class,
+'Html' => Collective\Html\HtmlFacade::class,
 ```
 
 Export setting file and resources with command:
