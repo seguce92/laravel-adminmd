@@ -14,11 +14,6 @@ Register the service provider array in `app/config/app.php`.
 Seguce92\AdminMD\ServiceProvider::class,
 ```
 
-You can optionally use the facade for shorter code. Add this to your facades in array `aliases`:
-```php
-'AdminMD' => Seguce92\AdminMD\Facade::class,
-```
-
 Export setting file and resources with command:
 
 ```bash
@@ -29,13 +24,22 @@ $ php artisan vendor:publish
 To start using the file manager perform the respective configuration in the file `app\config\seguce92\filemanager.php`
 
 ```php
-    /**
-     * PATH GLOBAL FILEMANAGER EMBED IN TINYMCE EDITOR
-     * --------------------------------------------------------------
-     *  Path filemanager resources
+<?php
+/**
+ * @package AdminMD
+ */
+return [
+    /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+     * COLOR SIDEBAR THEME
+     * ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+     *
+     * themes available [amber, black, blue-grey, blue, brown, cyan, deep-orange, deep-purple, green, grey, indigo, light-blue, lime, orange, pink, purple, red, teal, yellow]
      */
-    'filemanager' => '/filemanager/',
-
+    'theme' =>  'deep-purple'
+];
 ```
+### Examples
+Show examples in ```public/vendor/seguce92/AdminMD```
+
 ### Information and Details
 visit site [mascodigo.net](https://mascodigo.net)
