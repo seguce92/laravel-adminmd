@@ -9,7 +9,7 @@ You can install the package for your Laravel 5 project through Composer.
 $ composer require seguce92/laravel-adminmd
 ```
 
-Register the service provider array in `app/config/app.php`.
+Register the service provider array in `app/config/app.php` if laravel version is <= 5.4.
 ```php
 Seguce92\AdminMD\ServiceProvider::class,
 Collective\Html\HtmlServiceProvider::class,
