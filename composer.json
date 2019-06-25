@@ -3,12 +3,12 @@
     "description": "Laravel Admin Material Design template",
     "keywords": ["laravel", "bootstrap", "masterial", "template", "layout"],
     "license": "MIT",
-    "type": "project",
+    "type": "library",
     "authors": [
         {
             "name": "Sergio Gualberto Cruz Espinoza",
             "email": "seguce92@gmail.com",
-            "homepage": "http://mascodigo.net/"
+            "homepage": "http://sergiocruzes.com/"
         }
     ],
     "require": {
